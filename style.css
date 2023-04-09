@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background-color: #272b30;
+    font-family: "Nerko One", cursive;
+}
+.img1
+{
+    height: 30vh;
+}
+nav{
+    background-color: rgb(58, 73, 123) !important;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: -30px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+    color: white;
+    z-index: 222;
+}
+.img2
+{
+    vertical-align: middle;
+    width: 40px;
+}
+.active
+{
+    color:#0d6efd !important ;
+}
+.nav-link
+{
+    font-size: 12px;
+    margin-left: 2px;
+    transition: all .3s;
+}
+.nav-link:hover
+{
+    color: #0d6efd !important;
+}
+.items
+{
+    border-radius: 20px;
+    filter: grayscale(.6);
+    transition: all .5s;
+    
+}
+.items:hover
+{
+    transform: scale(1.07);
+    filter: grayscale(0);
+}
+.card-title
+{
+    text-align: left;
+    float: left;
+    font-size: 1em;
+}
+
+.card 
+{
+    background-color: inherit;
+}
+.badge
+{
+    float: right;
+}
+.clr 
+{
+    clear: both;
+}
+.card-body
+{
+    margin-left: -10px;
+}
+.img3
+{
+    border-radius: 20px 20px 0 0;
+}
+.card-text
+{
+    font-size: .9em;
+    color: white;
+    opacity: .5;
+}
+.f-badge
+{
+    background-color: #32383e;
+}
+/* section3 */
+.section3
+{
+    
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: #272b30e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    animation: rotation 1s linear infinite;
+    position: relative;
+  }
+  
+  .loader::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 4px solid #ff3d00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+
+  @keyframes rotation {
+    0%   {transform: rotate(0deg)}
+    100%   {transform: rotate(360deg)}
+  }
+
+
